@@ -71,6 +71,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 # Releasetools
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/galaxys2-common/releasetools/galaxys2_ota_from_target_files
 TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/galaxys2-common/releasetools/galaxys2_img_from_target_files
+TARGET_RELEASETOOLS_EXTENSIONS := ./device/samsung/galaxys2-common/releasetools/extensions
 
 # Hardware tunables
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
@@ -162,6 +163,7 @@ BOARD_SEPOLICY_UNION += \
     file.te \
     file_contexts \
     init.te \
+    kernel.te \
     mediaserver.te \
     rild.te \
     system_app.te \

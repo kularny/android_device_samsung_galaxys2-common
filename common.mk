@@ -111,8 +111,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_ffmpeg.xml:system/etc/media_codecs_ffmpeg.xml
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -130,9 +129,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
-    static_busybox \
     make_ext4fs \
-    setup_fs
+    resize2fs_static \
+    setup_fs \
+    static_busybox
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
@@ -194,6 +194,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.isUsbOtgEnabled=true
+
+# Keylayouts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/excluded-input-devices.xml:system/etc/excluded-input-devices.xml
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 

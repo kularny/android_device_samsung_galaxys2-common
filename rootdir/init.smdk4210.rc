@@ -31,6 +31,7 @@ on init
 
 on fs
     mount_all /fstab.smdk4210
+    swapon_all /fstab.smdk4210
 
     mkdir /efs/bluetooth
     mkdir /efs/wifi
@@ -328,9 +329,6 @@ on boot
     setprop ro.nfc.port "I2C"
     chmod 0600 /dev/pn544
     chown nfc nfc /dev/pn544
-
-# Device Encryption by B2B Security Lab. 
-    setprop ro.crypto.keyfile.userdata /efs/metadata
 
 # fake some battery state
     setprop status.battery.state Slow

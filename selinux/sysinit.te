@@ -1,0 +1,9 @@
+# DirtyUnicorns
+allow sysinit self:capability { dac_override };
+allow sysinit wifi_data_file:file { getattr };
+allow sysinit surfaceflinger_exec:file { getattr };
+allow sysinit kernel:process { setsched };
+allow sysinit property_socket:sock_file { write };
+allow sysinit system_data_file:file { write open };
+allow sysinit proc:file { write };
+allow sysinit proc_dirty_ratio:file { write open };

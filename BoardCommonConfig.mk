@@ -164,15 +164,22 @@ BOARD_SEPOLICY_UNION += \
     file.te \
     file_contexts \
     healthd.te \
+    hostapd.te \
     init.te \
     kernel.te \
     mediaserver.te \
+    netd.te \
     rild.te \
     service_contexts \
+    servicemanager.te \
+    shell.te \
+    sysinit.te \
     system_app.te \
     system_server.te \
     ueventd.te \
-    vold.te
+    vold.te \
+    wpa.te \
+    zygote.te
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxys2-common/recovery/recovery_keys.c

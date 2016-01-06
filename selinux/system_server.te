@@ -4,3 +4,6 @@ allow system_server efs_file:dir { search };
 allow system_server efs_file:file { read open write };
 allow system_server efs_device_file:dir search;
 allow system_server fuse:dir search;
+
+# DirtyUnicorns
+allow system_server zygote:binder { call };

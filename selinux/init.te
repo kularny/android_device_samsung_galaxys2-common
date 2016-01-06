@@ -1,1 +1,6 @@
 allow init self:capability sys_module;
+
+# DirtyUnicorns
+allow init self:process { execmem };
+allow init properties_device:file { execute };
+allow init binder_device:chr_file { execute };

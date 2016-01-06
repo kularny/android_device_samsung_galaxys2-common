@@ -39,3 +39,9 @@
 /sys/class/mdnie/mdnie/scenario         u:object_r:sysfs_display:s0
 /sys/class/mdnie/mdnie/mode             u:object_r:sysfs_display:s0
 /sys/class/mdnie/mdnie/negative         u:object_r:sysfs_display:s0
+
+# DirtyUnicorns
+/data/dalvik-cache/arm/system@framework@boot.art       u:object_r:dalvikcache_data_file:s0
+/data/msaa                                             u:object_r:system_data_file:s0
+/proc/sys/vm/dirty_background_ratio                    u:object_r:proc:s0
+/proc/sys/vm/dirty_ratio                               u:object_r:proc_dirty_ratio:s0

@@ -1,0 +1,4 @@
+# DirtyUnicorns
+allow init_shell debug_prop:property_service { set };
+allow init_shell block_device:blk_file { ioctl };
+allow init_shell kernel:process { setsched };

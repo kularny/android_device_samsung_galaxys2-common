@@ -166,6 +166,7 @@ BOARD_SEPOLICY_UNION += \
     healthd.te \
     hostapd.te \
     init.te \
+    init_shell.te \
     kernel.te \
     mediaserver.te \
     netd.te \

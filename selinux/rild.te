@@ -14,4 +14,4 @@ allow rild system_data_file:dir { write add_name };
 allow rild system_data_file:file { write create setattr };
 
 allow rild dumpstate_exec:file { read open getattr execute };
-unix_socket_connect(rild, dumpstate, dumpstate)
+unix_socket_connect(rild, dumpstate, dumpstate);

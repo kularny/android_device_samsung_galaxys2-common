@@ -45,3 +45,4 @@
 /data/msaa                                             u:object_r:system_data_file:s0
 /proc/sys/vm/dirty_background_ratio                    u:object_r:proc:s0
 /proc/sys/vm/dirty_ratio                               u:object_r:proc_dirty_ratio:s0
+/sys/kernel/mm/ksm/pages_to_scan                       u:object_r:sysfs:s0

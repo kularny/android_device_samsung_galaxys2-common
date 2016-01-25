@@ -62,6 +62,7 @@ PRODUCT_COPY_FILES += \
 
 # Packages
 PRODUCT_PACKAGES := \
+    CameraNext \
     com.android.future.usb.accessory \
     SamsungServiceMode
 

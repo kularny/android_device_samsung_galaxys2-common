@@ -114,6 +114,9 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6260
 BOARD_RIL_CLASS := ../../../device/samsung/galaxys2-common/ril
 
+# BLN
+BOARD_HAS_BLN := true
+
 # Camera
 BOARD_USES_PROPRIETARY_LIBFIMC := true
 BOARD_CAMERA_HAVE_ISO := true
